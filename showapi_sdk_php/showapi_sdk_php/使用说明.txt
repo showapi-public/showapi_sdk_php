@@ -1,0 +1,4 @@
+三个文件是使用sdk示例的demo。分别是：
+1.simple.php  	这是普通get或post请求的示例
+2.base64.php	这是上传base64的图片或文件示例
+3.file.php		这是以multimart方式上传文件的示例
