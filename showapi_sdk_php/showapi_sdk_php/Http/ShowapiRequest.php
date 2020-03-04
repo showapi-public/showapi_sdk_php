@@ -27,7 +27,11 @@ class ShowapiRequest
 	
 	public function addFilePara($key, $path)
 	{
-		$this->querys[$key] = '@' .$path;
+        if(version_compare(PHP_VERSION, '5.5.0') >= 0) {
+            $this->querys[$key] = new CURLFile($path);
+        } else {
+            $this->querys[$key] = '@' .$path;
+        }
 		return $this;
 	}
 
