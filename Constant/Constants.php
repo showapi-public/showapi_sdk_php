@@ -19,24 +19,24 @@
  */
 
 /**
- * Í¨ÓÃ³£Á¿
+ * é€šç”¨å¸¸é‡
  */
 class Constants
 {
-	//Ç©ÃûËã·¨HmacSha256
+    //ç­¾åç®—æ³•HmacSha256
     const HMAC_SHA256 = "HmacSHA256";
-    //±àÂëUTF-8
+    //ç¼–ç UTF-8
     const ENCODING = "UTF-8";
     //UserAgent
     const USER_AGENT = "demo/aliyun/java";
-    //»»ĞĞ·û
+    //æ¢è¡Œç¬¦
     const LF = "\n";
-	//·Ö¸ô·û1
+    //åˆ†éš”ç¬¦1
     const SPE1 = ",";
-    //·Ö¸ô·û2
+    //åˆ†éš”ç¬¦2
     const SPE2 = ":";
-    //Ä¬ÈÏÇëÇó³¬Ê±Ê±¼ä,µ¥Î»ºÁÃë
+    //é»˜è®¤è¯·æ±‚è¶…æ—¶æ—¶é—´,å•ä½æ¯«ç§’
     const DEFAULT_TIMEOUT = 1000;
-    //²ÎÓëÇ©ÃûµÄÏµÍ³HeaderÇ°×º,Ö»ÓĞÖ¸¶¨Ç°×ºµÄHeader²Å»á²ÎÓëµ½Ç©ÃûÖĞ
-	const CA_HEADER_TO_SIGN_PREFIX_SYSTEM = "X-Ca-";
+    //å‚ä¸ç­¾åçš„ç³»ç»ŸHeaderå‰ç¼€,åªæœ‰æŒ‡å®šå‰ç¼€çš„Headeræ‰ä¼šå‚ä¸åˆ°ç­¾åä¸­
+    const CA_HEADER_TO_SIGN_PREFIX_SYSTEM = "X-Ca-";
 }
