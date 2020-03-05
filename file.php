@@ -14,4 +14,4 @@
     		  ->addFilePara("image", $filePath)
     		  ->post();
 	print_r($response->getContent());
-	
+?>

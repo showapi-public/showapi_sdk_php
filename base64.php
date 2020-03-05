@@ -17,7 +17,7 @@
     		  ->addTextPara("typeId", $typeId)
     		  ->post();
 	print_r($response->getContent());
-	
-	
+
+?>
 	 
 	
