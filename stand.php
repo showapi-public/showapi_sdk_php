@@ -12,4 +12,5 @@
     		  ->addTextPara("num", $num)
     		  ->get();
 	print_r($response->getContent());
+	?>
 	
