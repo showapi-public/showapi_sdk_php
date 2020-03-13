@@ -1,7 +1,7 @@
 <?php
 	include_once 'Util/Autoloader.php';
 
-	$url = "http://route.showapi.com/xxxx-xxxxx";//调用URL,根据情况改变此值
+	$url = "https://route.showapi.com/xxxx-xxxxx";//调用URL,根据情况改变此值
 	$METHOD = "POST";
 	$showapi_appid="xxxxxxx";
 	$showapi_sign="xxxxxxxx";
