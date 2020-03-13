@@ -63,7 +63,18 @@ class ShowapiRequest
         return  $response;
 	}
 
-	 
-	
+
+    /**
+     * 文件转base64
+     *
+     * @param str
+     * @return
+     */
+    public static function file_base64($file_path){
+        $fp = fopen($file_path,"rb", 0);
+        $content = fread($fp,filesize($file_path));
+        fclose($fp);
+        return base64_encode($content);
+    }
 	 
 }
