@@ -11,9 +11,17 @@
     $img_base64 = ShowapiRequest::file_base64($file_path);
 
 	$req = new ShowapiRequest($url,$showapi_appid,$showapi_sign);
-	$response=$req->addTextPara("img_base64", $img_base64)
-    		  ->addTextPara("typeId", $typeId)
-    		  ->post();
+
+	//方式1
+	$response=$req->addTextPara("typeId", $typeId)
+		->addTextPara("img_base64", $img_base64)
+		->post();
+
+	//方式2
+	$response=$req->addTextPara("typeId", $typeId)
+		->addBase64Para("img_base64", $file_path)
+		->post();
+
 	print_r($response->getContent());
 
 ?>

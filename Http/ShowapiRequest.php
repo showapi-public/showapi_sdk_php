@@ -35,6 +35,20 @@ class ShowapiRequest
 		return $this;
 	}
 
+    public function addBase64Para($key,$file_info)
+    {
+        if(is_file($file_info)){
+            $fp = fopen($file_info,"rb", 0);
+            $content = fread($fp,filesize($file_info));
+            fclose($fp);
+            $f_base64 = base64_encode($content);
+            $this->querys[$key] = $f_base64;
+        }elseif (is_string($file_info)) {
+            $this->querys[$key] = base64_decode($file_info);
+        }
+        return $this;
+    }
+
 	/**
 	*method=GET请求示例
 	*/
